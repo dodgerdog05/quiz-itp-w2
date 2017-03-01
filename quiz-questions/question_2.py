@@ -28,8 +28,18 @@ def number_of_customers_per_state(customers):
         'NY': 1
     }
     """
-    # Write your code here
-    pass
+    UT = 0
+    NY = 0
+    count = 0 
+    for x in customers:
+         if customer in UT:
+                UT += 1
+                elif customer in NY:
+                    NY +=1
+    return UT
+    return NY
+        
+                
 
 
 class NumberOfCustomersPerStateTestCase(unittest.TestCase):
